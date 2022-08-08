@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "State",
+"language": "GDScript",
+"path": "res://source/states/State.gd"
+}, {
+"base": "Reference",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://source/states/StateMachine.gd"
+} ]
+_global_script_class_icons={
+"State": "",
+"StateMachine": ""
+}
+
+[application]
+
+config/name="BossMinigame"
+config/icon="res://icon.png"
+
+[autoload]
+
+Console="*res://source/autoloads/Console.gd"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
